@@ -7,6 +7,7 @@ import {
   SiAdobexd,
   SiAdobeillustrator,
   SiCanva,
+  SiGithub, // GitHub added
 } from "react-icons/si";
 
 function Toolstack() {
@@ -19,6 +20,11 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
         <SiVisualstudiocode size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Visual Studio Code</div>
+      </Col>
+  
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiGithub size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>GitHub</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
         <SiPostman size={50} />
