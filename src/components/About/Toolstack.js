@@ -12,23 +12,29 @@ import {
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons" title="Windows">
-        <SiWindows />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiWindows size={50} />
+        <div>Windows</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Visual Studio Code">
-        <SiVisualstudiocode />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiVisualstudiocode size={50} />
+        <div>Visual Studio Code</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Postman">
-        <SiPostman />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiPostman size={50} />
+        <div>Postman</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Adobe XD">
-        <SiAdobexd />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiAdobexd size={50} />
+        <div>Adobe XD</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Adobe Illustrator">
-        <SiAdobeillustrator />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiAdobeillustrator size={50} />
+        <div>Adobe Illustrator</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" title="Canva">
-        <SiCanva />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiCanva size={50} />
+        <div>Canva</div>
       </Col>
     </Row>
   );
