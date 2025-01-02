@@ -33,9 +33,8 @@ function AboutCard() {
               <ImPointRight /> Reading 📖
             </li>
           </ul>
+        
         </blockquote>
-
-          
       </Card.Body>
     </Card>
   );
