@@ -14,38 +14,49 @@ import { SiDjango, SiPostgresql, SiMysql, SiMicrosoftexcel } from "react-icons/s
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <DiPython size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Python</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <DiJavascript1 size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>JavaScript</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDjango />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiDjango size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Django</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <DiHtml5 size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>HTML5</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <DiCss3 size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>CSS3</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <DiGit size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Git</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiPostgresql size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>PostgreSQL</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiMysql size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>MySQL</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMicrosoftexcel />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiMicrosoftexcel size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Excel</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <DiNodejs size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Node.js</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <DiReact size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>React.js</div>
       </Col>
     </Row>
   );
