@@ -38,10 +38,7 @@ function Techstack() {
         <DiGit size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Git</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
-        <SiPostgresql size={50} />
-        <div style={{ fontSize: "12px", marginTop: "5px" }}>PostgreSQL</div>
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
         <SiMysql size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>MySQL</div>
