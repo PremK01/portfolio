@@ -10,6 +10,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 function Home() {
   return (
@@ -21,9 +22,20 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
+                </span>{" "}
+                <span className="greeting-text">
+                  Hi There!{" "}
+                  <Typewriter
+                    options={{
+                      strings: ["Welcome to My World!", "Let's Connect!", "I'm Here to Help!"],
+                      autoStart: true,
+                      loop: true,
+                      deleteSpeed: 50,
+                      delay: 200,
+                    }}
+                  />
                 </span>
               </h1>
 
@@ -31,11 +43,10 @@ function Home() {
                 I'M
                 <strong className="main-name"> PREM PRASAD K</strong>
               </h1>
-              
-                  <h1 className="heading-name">
+              <h1 className="heading-name">
                 I'M A
                 <strong className="main-name"> COMPUTER SCIENCE GRADUATE</strong>
-              </h1>    
+              </h1>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
@@ -59,8 +70,8 @@ function Home() {
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
               <p className="home-about-body">
-                I’ve developed a strong passion for programming and have made significant progress 
-                along the way. 
+                I’ve developed a strong passion for programming and have made significant progress
+                along the way.
                 <br />
                 <br />I am skilled in both
                 <i>
@@ -73,7 +84,7 @@ function Home() {
                   <b className="purple">innovative Web Technologies and Products </b> and
                   also in areas related to{" "}
                   <b className="purple">
-                  Machine Learning.
+                    Machine Learning.
                   </b>
                 </i>
                 <br />
