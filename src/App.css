@@ -1,8 +1,11 @@
+/* General App Layout */
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Ensures full screen height */
+  margin: 0;
+  padding: 0;
 }
 
 #scroll {
@@ -28,7 +31,7 @@ footer {
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100vh; /* Ensures full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,5 +50,113 @@ footer {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Adjust home section and about section */
+.home-section {
+  position: relative;
+  z-index: -1;
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.home-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.home-header {
+  padding-bottom: 15px;
+}
+
+.home-img-col img {
+  max-height: 450px;
+  width: auto;
+}
+
+.home-about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.home-about-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.home-about-social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.home-about-social-links .social-icons {
+  margin: 0 15px;
+}
+
+.purple {
+  color: purple;
+}
+
+.myAvtar img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+/* Style adjustments for smaller screens */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .home-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-img-col img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .home-about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-about-description {
+    text-align: center;
   }
 }
