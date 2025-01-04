@@ -67,7 +67,17 @@ function Projects() {
                 )}
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
+                  <Card.Text style={{ textAlign: "justify" }}>
+                    {project.description}
+                  </Card.Text>
+                  <Card.Text>
+                    <strong>Technologies Used:</strong>
+                    <ul>
+                      {project.skills.map((skill, skillIndex) => (
+                        <li key={skillIndex}>{skill}</li>
+                      ))}
+                    </ul>
+                  </Card.Text>
                   <Button
                     variant="primary"
                     href={project.ghLink}
@@ -76,17 +86,6 @@ function Projects() {
                   >
                     View on GitHub
                   </Button>
-                </Card.Body>
-              </Card>
-              {/* Skills Section */}
-              <Card className="project-card-view mt-3">
-                <Card.Body>
-                  <Card.Title>Skills & Technologies</Card.Title>
-                  <ul>
-                    {project.skills.map((skill, skillIndex) => (
-                      <li key={skillIndex}>{skill}</li>
-                    ))}
-                  </ul>
                 </Card.Body>
               </Card>
             </Col>
