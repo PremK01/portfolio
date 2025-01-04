@@ -741,3 +741,10 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+.typewriter-text {
+  font-size: 0.9em; /* Reduced font size */
+  margin-top: 20px;  /* Space above */
+  margin-bottom: 20px; /* Space below */
+  color: #ffffff; /* Optional: Set text color if necessary */
+}
+
