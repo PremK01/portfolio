@@ -13,7 +13,7 @@ function AboutCard() {
             <br />
             I am an engineering graduate eager to leverage my skills to solve real world problems.
             <br />
-            I have completed Bachelor of Engineering (BE) in Computer Science Engineering at SRM
+            I have completed Bachelor of Engineering (B.E) in Computer Science Engineering at SRM
             Valliammai Engineering College.
             <br />
             <br />
