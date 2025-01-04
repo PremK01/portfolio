@@ -22,7 +22,7 @@ function Projects() {
       imgPath: "",
       title: "Portfolio",
       description:
-        "The personal portfolio website that you are looking at showcasing my projects, skills, and contact information. Built with React.js and deployed online.",
+        "The personal portfolio website that you are looking at, showcasing my projects, skills, and contact information. Built with React.js and deployed online.",
       ghLink: "https://github.com/PremK01/portfolio",
     },
   ];
