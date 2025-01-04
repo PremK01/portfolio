@@ -6,7 +6,9 @@ import {
   SiWindows,
   SiFigma,
   SiCanva,
-  SiGithub, // GitHub added
+  SiGithub,
+  SiPython, // For Jupyter Notebook
+  SiMicrosoftoffice, // For Microsoft Office
 } from "react-icons/si";
 
 function Toolstack() {
@@ -20,7 +22,6 @@ function Toolstack() {
         <SiVisualstudiocode size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Visual Studio Code</div>
       </Col>
-  
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
         <SiGithub size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>GitHub</div>
@@ -33,10 +34,17 @@ function Toolstack() {
         <SiFigma size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Figma</div>
       </Col>
-      
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
         <SiCanva size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Canva</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiPython size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Jupyter Notebook</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <SiMicrosoftoffice size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Microsoft Office</div>
       </Col>
     </Row>
   );
