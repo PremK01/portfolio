@@ -1,3 +1,4 @@
+//home2.js
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
@@ -19,7 +20,8 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’ve developed a strong passion for programming and have made significant progress along the way. 
+            I’ve developed a strong passion for programming and have made significant progress 
+            along the way. 
               <br />
               <br />I am skilled in both
               <i>
@@ -58,6 +60,7 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
+            
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
@@ -83,6 +86,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
+              
             </ul>
           </Col>
         </Row>
@@ -90,5 +94,4 @@ function Home2() {
     </Container>
   );
 }
-
 export default Home2;
