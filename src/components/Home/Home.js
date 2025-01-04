@@ -27,23 +27,7 @@ function Home() {
                 </span>{" "}
                 <span className="greeting-text">
                   Hi There!{" "}
-                  <Typewriter className="typewriter-text"
-                    options={{
-                      strings: ["Welcome to My World!", "Let's Connect!", "I'm Here to Help!"],
-                      autoStart: true,
-                      loop: true,
-                      deleteSpeed: 50,
-                      delay: 200,
-                    }}
-                    onInit={(typewriter) => {
-                      typewriter
-                        .changeDelay(200)
-                        .changeDeleteSpeed(50)
-                        .start();
-                    }}
-                    className="typewriter-text" // Added class name for further styling
-                  />
-                </span>
+                  
               </h1>
 
               <h1 className="heading-name">
