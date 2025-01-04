@@ -19,7 +19,7 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
+            <Col md={7} className="home-header" style={{ textAlign: "left" }}>
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -31,14 +31,14 @@ function Home() {
                 I AM
                 <strong className="main-name"> PREM PRASAD K</strong>
               </h1>
-              
-                  <h1 className="heading-name">
+
+              <h1 className="heading-name">
                 I'M A
                 <strong className="main-name"> COMPUTER SCIENCE GRADUATE</strong>
-              </h1>    
+              </h1>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 20, textAlign: "center" }}>
               <img
                 src={homeLogo}
                 alt="home pic"
@@ -54,15 +54,16 @@ function Home() {
       <Container fluid className="home-about-section" id="about">
         <Container>
           <Row>
-            <Col md={8} className="home-about-description">
+            <Col md={8} className="home-about-description" style={{ textAlign: "left" }}>
               <h1 style={{ fontSize: "2.6em" }}>
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
               <p className="home-about-body">
                 I’ve developed a strong passion for programming and have made significant progress 
-                along the way. 
+                along the way.
                 <br />
-                <br />I am skilled in both
+                <br />
+                I am skilled in both
                 <i>
                   <b className="purple"> front-end and back-end technologies. </b>
                 </i>
@@ -72,18 +73,13 @@ function Home() {
                 <i>
                   <b className="purple">innovative Web Technologies and Products </b> and
                   also in areas related to{" "}
-                  <b className="purple">
-                  Machine Learning.
-                  </b>
+                  <b className="purple">Machine Learning.</b>
                 </i>
                 <br />
                 <br />
                 I enjoy working on applications using <b className="purple">Node.js, Express,</b> and
                 <i>
-                  <b className="purple">
-                    {" "}
-                    Modern Javascript Library and Frameworks
-                  </b>
+                  <b className="purple"> Modern Javascript Libraries and Frameworks</b>
                 </i>
                 &nbsp; like
                 <i>
@@ -91,24 +87,24 @@ function Home() {
                 </i>
               </p>
             </Col>
-            <Col md={4} className="myAvtar">
+            <Col md={4} className="myAvtar" style={{ textAlign: "center" }}>
               <Tilt>
                 <img src={myImg} className="img-fluid" alt="avatar" />
               </Tilt>
             </Col>
           </Row>
           <Row>
-            <Col md={12} className="home-about-social">
+            <Col md={12} className="home-about-social" style={{ textAlign: "center" }}>
               <p>
                 Feel free to <span className="purple">connect </span>with me
               </p>
-              <ul className="home-about-social-links">
+              <ul className="home-about-social-links" style={{ textAlign: "center" }}>
                 <li className="social-icons">
                   <a
                     href="https://github.com/PremK01"
                     target="_blank"
                     rel="noreferrer"
-                    className="icon-colour  home-social-icons"
+                    className="icon-colour home-social-icons"
                   >
                     <AiFillGithub />
                   </a>
@@ -118,7 +114,7 @@ function Home() {
                     href="https://www.linkedin.com/in/premk01/"
                     target="_blank"
                     rel="noreferrer"
-                    className="icon-colour  home-social-icons"
+                    className="icon-colour home-social-icons"
                   >
                     <FaLinkedinIn />
                   </a>
