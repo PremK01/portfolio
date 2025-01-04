@@ -4,8 +4,7 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiWindows,
-  SiAdobexd,
-  SiAdobeillustrator,
+  SiFigma,
   SiCanva,
   SiGithub, // GitHub added
 } from "react-icons/si";
@@ -31,13 +30,10 @@ function Toolstack() {
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Postman</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
-        <SiAdobexd size={50} />
-        <div style={{ fontSize: "12px", marginTop: "5px" }}>Adobe XD</div>
+        <SiFigma size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Figma</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
-        <SiAdobeillustrator size={50} />
-        <div style={{ fontSize: "12px", marginTop: "5px" }}>Adobe Illustrator</div>
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
         <SiCanva size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Canva</div>
