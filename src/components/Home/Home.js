@@ -29,7 +29,7 @@ function Home() {
                   Hi There!{" "}
                   <Typewriter
                     options={{
-                      strings: ["Welcome to My World!", "Let's Connect!"],
+                      strings: ["Welcome to My World!", "Let's Connect!", "I'm Here to Help!"],
                       autoStart: true,
                       loop: true,
                       deleteSpeed: 50,
@@ -42,7 +42,7 @@ function Home() {
                         .start();
                     }}
                     style={{
-                      fontSize: "1.2em", // Decreased font size
+                      fontSize: "1.0em", // Further reduced font size
                       marginTop: "20px",  // Space above the Typewriter text
                       marginBottom: "20px", // Space below the Typewriter text
                     }}
