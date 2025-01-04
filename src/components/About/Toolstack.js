@@ -6,7 +6,7 @@ import {
   SiWindows,
   SiFigma,
   SiCanva,
-  SiGithub, // GitHub added
+  SiGithub,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -37,6 +37,17 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
         <SiCanva size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Canva</div>
+      </Col>
+
+      {/* Adding Jupyter Notebook via online source */}
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupyter_logo.svg" 
+          alt="Jupyter Logo" 
+          width={50} 
+          height={50} 
+        />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>Jupyter Notebook</div>
       </Col>
     </Row>
   );
