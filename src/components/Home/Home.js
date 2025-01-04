@@ -31,6 +31,11 @@ function Home() {
                 I'M
                 <strong className="main-name"> PREM PRASAD K</strong>
               </h1>
+              
+                  <h1 className="heading-name">
+                I'M A
+                <strong className="main-name"> COMPUTER SCIENCE GRADUATE</strong>
+              </h1>    
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
