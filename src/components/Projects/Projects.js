@@ -25,8 +25,8 @@ function Projects() {
         "A web app for image and PDF conversions: format conversion, resizing, image-to-PDF, and PDF-to-image. Built with Python, Flask, and JavaScript, it ensures secure, user-friendly operations.",
       ghLink: "https://github.com/PremK01/Forgimage",
       skills: [
-        "HTML5",
-        "CSS3",
+        "HTML",
+        "CSS",
         "JavaScript",
         "Flask",
         "Pillow Library",
@@ -66,7 +66,9 @@ function Projects() {
                   <Card.Img variant="top" src={project.imgPath} alt={project.title} />
                 )}
                 <Card.Body>
-                  <Card.Title>{project.title}</Card.Title>
+                  <Card.Title style={{ color: "#00dfc2", fontWeight: "bold", fontSize: "1.5rem" }}>
+                    {project.title}
+                  </Card.Title>
                   <Card.Text style={{ textAlign: "justify" }}>
                     {project.description}
                   </Card.Text>
