@@ -27,7 +27,7 @@ function Home() {
                 </span>{" "}
                 <span className="greeting-text">
                   Hi There!{" "}
-                  <Typewriter
+                  <Typewriter className="typewriter-text"
                     options={{
                       strings: ["Welcome to My World!", "Let's Connect!", "I'm Here to Help!"],
                       autoStart: true,
