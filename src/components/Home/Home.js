@@ -29,11 +29,22 @@ function Home() {
                   Hi There!{" "}
                   <Typewriter
                     options={{
-                      strings: ["Welcome to My World!", "Let's Connect!", "I'm Here to Help!"],
+                      strings: ["Welcome to My World!", "Let's Connect!"],
                       autoStart: true,
                       loop: true,
                       deleteSpeed: 50,
                       delay: 200,
+                    }}
+                    onInit={(typewriter) => {
+                      typewriter
+                        .changeDelay(200)
+                        .changeDeleteSpeed(50)
+                        .start();
+                    }}
+                    style={{
+                      fontSize: "1.2em", // Decreased font size
+                      marginTop: "20px",  // Space above the Typewriter text
+                      marginBottom: "20px", // Space below the Typewriter text
                     }}
                   />
                 </span>
