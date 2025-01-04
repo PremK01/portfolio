@@ -11,7 +11,7 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #00dfc2;
 }
 
 .purple {
@@ -282,7 +282,7 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #00dfc2;
 }
 
 .Typewriter__wrapper {
