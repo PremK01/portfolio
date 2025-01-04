@@ -5,21 +5,21 @@ import Particle from "../Particle";
 function Projects() {
   const projectData = [
     {
-      imgPath: "src/Assets/Project IMG/Attrition.png",
+      imgPath: "",
       title: "Employee Attrition Prediction",
       description:
         "A machine learning model to predict employee attrition using various factors such as job satisfaction, work-life balance, and performance metrics.",
       ghLink: "https://github.com/PremK01/Employee_AttritionPrediction",
     },
     {
-      imgPath: "src/Assets/Project IMG/Forgimage.png",
+      imgPath: "",
       title: "Forgimage",
       description:
         "A web app for image and PDF conversions: format conversion, resizing, image-to-PDF, and PDF-to-image. Built with Python, Flask, and JavaScript, it ensures secure, user-friendly operations.",
       ghLink: "https://github.com/PremK01/Forgimage",
     },
     {
-      imgPath: "src/Assets/Project IMG/portfolio.png",
+      imgPath: "",
       title: "Portfolio",
       description:
         "A personal portfolio website showcasing my projects, skills, and contact information. Built with React.js and deployed online.",
