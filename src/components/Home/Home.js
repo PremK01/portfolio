@@ -59,7 +59,7 @@ function Home() {
                 <br />
                 <br />I am skilled in both
                 <i>
-                  <b className="purple"> front-end and back-end technologies </b>
+                  <b className="purple"> front-end and back-end technologies. </b>
                 </i>
                 <br />
                 <br />
@@ -82,7 +82,7 @@ function Home() {
                 </i>
                 &nbsp; like
                 <i>
-                  <b className="purple"> React.js</b>
+                  <b className="purple"> React.js .</b>
                 </i>
               </p>
             </Col>
