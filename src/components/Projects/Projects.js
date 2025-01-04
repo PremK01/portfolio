@@ -10,6 +10,13 @@ function Projects() {
       description:
         "A machine learning model to predict employee attrition using various factors such as job satisfaction, work-life balance, and performance metrics.",
       ghLink: "https://github.com/PremK01/Employee_AttritionPrediction",
+      skills: [
+        "Logistic Regression",
+        "Random Forest",
+        "GridSearchCV",
+        "PCA",
+        "Scikit-learn",
+      ],
     },
     {
       imgPath: "",
@@ -17,6 +24,13 @@ function Projects() {
       description:
         "A web app for image and PDF conversions: format conversion, resizing, image-to-PDF, and PDF-to-image. Built with Python, Flask, and JavaScript, it ensures secure, user-friendly operations.",
       ghLink: "https://github.com/PremK01/Forgimage",
+      skills: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Flask",
+        "Pillow Library",
+      ],
     },
     {
       imgPath: "",
@@ -24,6 +38,13 @@ function Projects() {
       description:
         "The personal portfolio website that you are looking at, showcasing my projects, skills, and contact information. Built with React.js and deployed online.",
       ghLink: "https://github.com/PremK01/portfolio",
+      skills: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "Vercel",
+        "CSS3",
+      ],
     },
   ];
 
@@ -55,6 +76,17 @@ function Projects() {
                   >
                     View on GitHub
                   </Button>
+                </Card.Body>
+              </Card>
+              {/* Skills Section */}
+              <Card className="project-card-view mt-3">
+                <Card.Body>
+                  <Card.Title>Skills & Technologies</Card.Title>
+                  <ul>
+                    {project.skills.map((skill, skillIndex) => (
+                      <li key={skillIndex}>{skill}</li>
+                    ))}
+                  </ul>
                 </Card.Body>
               </Card>
             </Col>
