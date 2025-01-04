@@ -41,11 +41,7 @@ function Home() {
                         .changeDeleteSpeed(50)
                         .start();
                     }}
-                    style={{
-                      fontSize: "1.0em", // Further reduced font size
-                      marginTop: "20px",  // Space above the Typewriter text
-                      marginBottom: "20px", // Space below the Typewriter text
-                    }}
+                    className="typewriter-text" // Added class name for further styling
                   />
                 </span>
               </h1>
