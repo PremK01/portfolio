@@ -16,6 +16,7 @@ function AboutCard() {
             I have completed Bachelor of Engineering (B.E) in Computer Science Engineering at SRM
             Valliammai Engineering College.
             <br />
+            You can learn more about my educational qualification from my resume.
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
