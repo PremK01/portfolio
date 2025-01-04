@@ -25,8 +25,8 @@ function Projects() {
         "A web app for image and PDF conversions: format conversion, resizing, image-to-PDF, and PDF-to-image. Built with Python, Flask, and JavaScript, it ensures secure, user-friendly operations.",
       ghLink: "https://github.com/PremK01/Forgimage",
       skills: [
-        "HTML",
-        "CSS",
+        "HTML5",
+        "CSS3",
         "JavaScript",
         "Flask",
         "Pillow Library",
