@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/homemain.png";
 import Particle from "../Particle";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar1.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
