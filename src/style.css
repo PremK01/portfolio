@@ -831,10 +831,16 @@ button:focus {
 
 /* Media query for larger screens (Desktops) */
 @media (min-width: 1024px) {
+  .animated-text {
+    width: 100%; /* Ensure the text container doesn't extend beyond the viewport */
+    padding: 0 10%; /* Add some padding to the sides for larger screens */
+  }
+
   .animated-text div {
     font-size: 2rem; /* Use fixed font size for desktops to prevent overflow */
-    letter-spacing: 2px; /* Adjust letter spacing for desktop */
-    text-indent: 2px; /* Adjust text indent for desktop */
+    letter-spacing: 0.5rem; /* Adjust letter spacing for desktop */
+    text-indent: 0.5rem; /* Adjust text indent for desktop */
+    max-width: 100%; /* Ensure the text doesn't overflow the container */
   }
 
   .animated-text .s1 {
@@ -845,14 +851,16 @@ button:focus {
 /* Keyboard animation for text */
 .keyboard {
   display: inline-block;
+  word-wrap: break-word; /* Ensures long words break correctly on smaller screens */
 }
 
 .key {
   font-size: inherit; /* Use the original text size */
   display: inline-block;
-  letter-spacing: -0.1em; /* Adjust letter spacing for natural look */
+  letter-spacing: -0.1em; /* Adjust letter spacing for a natural look */
   transition: transform 0.2s;
   color: #00dfc2; /* Desired color */
+  white-space: nowrap; /* Prevents the characters from breaking apart */
 }
 
 @keyframes pressDown {
@@ -931,6 +939,21 @@ button:focus {
 .key:nth-child(16) {
   animation: pressDown 2.4s infinite;
 }
+
+/* Media query for mobile-friendly behavior */
+@media (max-width: 768px) {
+  .keyboard {
+    display: block; /* Make the keyboard container block to allow wrapping */
+    text-align: center; /* Center the text on smaller screens */
+  }
+
+  .key {
+    font-size: 4vw; /* Adjust font size based on screen width */
+    letter-spacing: normal; /* Adjust letter-spacing for mobile */
+    display: inline-block; /* Keep the key display inline-block for animation */
+  }
+}
+
 .neon-text {
   font-family: 'Arial', sans-serif; /* Adjust to your preferred font */
   font-weight: 400; /* Normal weight */
