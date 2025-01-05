@@ -15,14 +15,23 @@ function AboutCard() {
             I am an engineering graduate open for work, eager to leverage my skills to solve real world problems.
             <br />
             <br />
+            I am equipped with front-end skills such as React.js, HTML, CSS, Javascript and back-end skills like
+            Python, Django, Flask, SQL, Node.js, Express.Additionally, I am familiar with  UI/UX Design tools
+            like Figma and Canva.
+            <br />
+            <br />
             I completed Bachelor of Engineering (B.E) in Computer Science Engineering at SRM
             Valliammai Engineering College in 2023.
             <br />
             <br />
-            You can learn more about my educational qualification from my resume.
+            I have organised and participated in various technical and non-technical events during my time in 
+            college.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            You can learn more about my educational qualification from the education page and my resume.
+            <br />
+            <br />
+            Apart from coding, there are other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">

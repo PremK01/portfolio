@@ -25,7 +25,7 @@ function Education() {
           <div className="timeline-details">
             <p><strong>HSC, Computer Science at SBOA Matric & Higher Sec School</strong></p>
             <p>Location: Chennai</p>
-            <p><span className="highlight">Percentage: 73.8%</span></p>
+            <p><span className="highlight">Percentage: 74%</span></p>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ function Education() {
 
       {/* Coursework Section */}
       <div className="coursework-section" style={{ textAlign: "center" }}>
-        <h2 className="coursework-heading">Courses Completed</h2>
+        <h2 className="coursework-heading">Courses Completed</h2> <br />
         <ul className="coursework-list" style={{ listStyle: "none", padding: 0, margin: "0 auto", display: "inline-block", textAlign: "left", maxWidth: "800px" }}>
           <li style={{ marginBottom: "2rem" }}>
             <p><strong>IBM Full Stack Software Developer</strong></p>
