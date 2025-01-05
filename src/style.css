@@ -914,8 +914,8 @@ button:focus {
 }
 
 .neon-letter:nth-child(7) {
-  transform: translate(-0.1rem, 0.2rem) rotate(5deg);
-  animation: flicker 2s ease-in-out infinite alternate;
+  transform: translate(-0.1rem, 0.2rem) rotate(3deg);
+  animation: flicker 4s ease-in-out infinite alternate;
 }
 
 @keyframes flicker {
@@ -933,5 +933,181 @@ button:focus {
   }
   50% {
     transform: translate(-0.1rem, 0.2rem) rotate(8deg);
+  }
+}
+
+/*Education section*/
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #101010; /* Same background color as existing */
+  color: white;
+}
+
+/* Section Styles */
+.education-section, .coursework-section {
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.education-heading {
+  color: #00dfc2;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Timeline Styles */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ecf0ef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Alternate timeline positions */
+.timeline-item.left {
+  align-self: flex-start;
+  margin-left: 0;
+}
+
+.timeline-item.right {
+  align-self: flex-end;
+  margin-right: 0;
+}
+
+/* Year Indicator */
+.timeline-year {
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00dfc2;
+}
+
+/* Content Alignment */
+.timeline-content {
+  text-align: left;
+}
+
+.timeline-item.left .timeline-content {
+  transform: translateX(-30px);
+}
+
+.timeline-item.right .timeline-content {
+  transform: translateX(30px);
+}
+
+.timeline-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00dfc2;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.timeline-details .highlight {
+  color: #00dfc2;
+}
+
+/* Coursework Styles */
+.coursework-heading{
+  color: #00dfc2;
+}
+.coursework-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.coursework-list img {
+  max-height: 50px;
+  max-width: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.coursework-list strong {
+  color: #00dfc2;
+}
+
+.coursework-list li {
+  list-style-type: none;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.course-description {
+  color: white; /* White text color for the description */
+  font-size: 1rem; /* Adjust the size if necessary */
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.view-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from the link */
+  margin-top: 10px;
+}
+
+.view-button:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+}
+
+.view-button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .timeline {
+    width: 100%;
+  }
+
+  .timeline-item {
+    width: 90%;
+    align-self: center !important;
+  }
+
+  .timeline-content {
+    transform: none;
+    text-align: center;
+  }
+
+  .timeline-year {
+    position: static;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }

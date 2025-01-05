@@ -52,6 +52,30 @@ function About() {
         </h1>
         <Toolstack />
 
+        <h1 className="project-heading">
+          <strong className="purple">Contact</strong>
+        </h1>
+        <Row className="justify-content-center">
+          <Col md={6} style={{ textAlign: "left" }}>
+            <p>
+              <strong>Phone:</strong> +91 73587 58056 <br /> <br /> 
+              <strong>E-mail:</strong> premprasadk01@gmail.com <br /> <br /> 
+              <strong>LinkedIn:</strong>{" "}
+              <a
+                href="https://www.linkedin.com/in/premk01/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://www.linkedin.com/in/premk01/
+              </a>
+              <br /> <br /> 
+              <strong>Address:</strong><br />  40/6, Welcome Colony, <br />
+              Anna Nagar West, <br />
+              Chennai-600101.
+            </p>
+          </Col>
+        </Row>
+
         <Github />
       </Container>
     </Container>

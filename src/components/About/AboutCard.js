@@ -12,7 +12,7 @@ function AboutCard() {
             from <span className="purple"> Chennai, India.</span>
             <br />
             <br />
-            I am an engineering graduate eager to leverage my skills to solve real world problems.
+            I am an engineering graduate open for work, eager to leverage my skills to solve real world problems.
             <br />
             <br />
             I completed Bachelor of Engineering (B.E) in Computer Science Engineering at SRM
@@ -38,6 +38,9 @@ function AboutCard() {
               <ImPointRight /> Reading 📖
             </li>
           </ul>
+          <p style={{ textAlign: "justify" }}>
+            Feel free to contact me anytime, you can find my details at the bottom.
+          </p>
         
         </blockquote>
       </Card.Body>
