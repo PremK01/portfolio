@@ -11,12 +11,16 @@ function AboutCard() {
             Hi, I am <span className="purple">Prem Prasad K </span>
             from <span className="purple"> Chennai, India.</span>
             <br />
+            <br />
             I am an engineering graduate eager to leverage my skills to solve real world problems.
             <br />
-            I have completed Bachelor of Engineering (B.E) in Computer Science Engineering at SRM
-            Valliammai Engineering College.
+            <br />
+            I completed Bachelor of Engineering (B.E) in Computer Science Engineering at SRM
+            Valliammai Engineering College in 2023.
+            <br />
             <br />
             You can learn more about my educational qualification from my resume.
+            <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>

@@ -31,13 +31,21 @@ function Home() {
                 I'M
                 <strong className="main-name"> PREM PRASAD K</strong>
               </h1>
-
+              <br />
+              
               <h1 className="heading-name">
                 I'M A
-                <strong className="main-name"> COMPUTER SCIENCE GRADUATE</strong>
+                <div className="keyboard">
+                {Array.from(" COMPUTER  SCIENCE   GRADUATE").map((char, index) => (
+                <span key={index} className={`key key-${index + 1}`}>
+                {char === " " ? "\u00A0" : char} {/* Handles spaces properly */}
+                </span>
+                ))}
+                </div>
               </h1>
             </Col>
-
+            
+            
             <Col md={5} style={{ paddingBottom: 20, textAlign: "center" }}>
               <img
                 src={homeLogo}
@@ -46,6 +54,18 @@ function Home() {
                 style={{ maxHeight: "450px" }}
               />
             </Col>
+            <div className="animated-text">
+              <div className="a01">HELLO WORLD</div>
+              <div className="a02">HELLO WORLD</div>
+              <div className="a03">HELLO WORLD</div>
+              <div className="a04">HELLO WORLD</div>
+              <br />
+              <div className="a01 s1">LETS CONNECT!</div>
+              <div className="a02 s1">LETS CONNECT!</div>
+              <div className="a03 s1">LETS CONNECT!</div>
+              <div className="a04 s1">LETS CONNECT!</div>
+            </div>
+
           </Row>
         </Container>
       </Container>

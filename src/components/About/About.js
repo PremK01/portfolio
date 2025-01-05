@@ -21,9 +21,16 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know <strong className="purple">Me</strong>
+            <h1 className="neon-text">
+              <span className="neon-letter">K</span>
+              <span className="neon-letter">N</span>
+              <span className="neon-letter">O</span>
+              <span className="neon-letter">W</span>
+              <span className="neon-space" style={{ margin: "0 20px" }}> </span> {/* Adjust space */}
+              <span className="neon-letter purple">M</span>
+              <span className="neon-letter purple">E</span>
             </h1>
+
             <Aboutcard />
           </Col>
           <Col
