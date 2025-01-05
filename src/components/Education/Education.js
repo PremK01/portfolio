@@ -40,17 +40,17 @@ function Education() {
       </div>
 
       {/* Coursework Section */}
-      <div className="coursework-section">
+      <div className="coursework-section" style={{ textAlign: "center" }}>
         <h2 className="coursework-heading">Courses Completed</h2>
-        <ul className="coursework-list">
-          <li>
+        <ul className="coursework-list" style={{ listStyle: "none", padding: 0, margin: "0 auto", display: "inline-block", textAlign: "left", maxWidth: "800px" }}>
+          <li style={{ marginBottom: "2rem" }}>
             <p><strong>IBM Full Stack Software Developer</strong></p>
-            <p className="course-description">
-              In this course, I built a strong foundation in both front-end and back-end development.<br />
-              I learned to use HTML, CSS, and JavaScript to create dynamic and responsive web pages.<br />
-              On the back-end, I explored technologies like Python and Django, which allowed me<br />
-              to build server-side applications and connect them to databases.<br />
-              By integrating both front-end and back-end skills, I developed fully functional<br />
+            <p className="course-description" style={{ marginTop: "1rem", lineHeight: "1.6", textAlign: "justify" }}>
+              In this course, I built a strong foundation in both front-end and back-end development.
+              I learned to use HTML, CSS, and JavaScript to create dynamic and responsive web pages.
+              On the back-end, I explored technologies like Python and Django, which allowed me
+              to build server-side applications and connect them to databases.
+              By integrating both front-end and back-end skills, I developed fully functional
               web applications, gaining hands-on experience in full-stack development.
             </p>
             <Button 
@@ -61,18 +61,16 @@ function Education() {
               View
             </Button>
           </li>
-          <li>
+          <li style={{ marginBottom: "2rem" }}>
             <p><strong>IBM Data Science</strong></p>
-            <p className="course-description">
-              Throughout the IBM Data Science course, I gained comprehensive knowledge<br />
-              in data analysis and machine learning. I learned to use Python for data analysis<br />
-              with powerful libraries like Pandas and Numpy. The course covered essential topics<br />
-              in data wrangling, exploratory data analysis, and statistical analysis.<br />
-              I also learned how to visualize data using tools like Matplotlib and Seaborn,<br />
-              and got hands-on experience with machine learning algorithms such as<br />
-              classification and regression. This course equipped me with the skills<br />
-              to tackle data-driven problems and apply machine learning techniques<br />
-              to real-world datasets.
+            <p className="course-description" style={{ marginTop: "1rem", lineHeight: "1.6", textAlign: "justify" }}>
+              Throughout the IBM Data Science course, I gained comprehensive knowledge in data analysis
+              and machine learning. I learned to use Python for data analysis with powerful libraries like
+              Pandas and Numpy. The course covered essential topics in data wrangling, exploratory data
+              analysis, and statistical analysis. I also learned how to visualize data using tools like
+              Matplotlib and Seaborn, and got hands-on experience with machine learning algorithms such as
+              classification and regression. This course equipped me with the skills to tackle data-driven
+              problems and apply machine learning techniques to real-world datasets.
             </p>
             <Button 
               href="https://coursera.org/share/3d2457caddb258119966436f1a79a803" 
@@ -82,17 +80,16 @@ function Education() {
               View
             </Button>
           </li>
-          <li>
+          <li style={{ marginBottom: "2rem" }}>
             <p><strong>Data Structures and Algorithms</strong></p>
-            <p className="course-description">
-              The Data Structures and Algorithms course helped me develop a solid understanding<br />
-              of key data structures such as arrays, linked lists, stacks, queues, and graphs.<br />
-              I learned how to efficiently store and manipulate data using these structures<br />
-              and explored the importance of algorithms in optimizing problem-solving.<br />
-              Topics such as sorting, searching, and dynamic programming were covered in depth,<br />
-              and I gained practical skills in implementing algorithms that solve real-world problems.<br />
-              This course also prepared me for coding interviews by enhancing my ability<br />
-              to think algorithmically and write efficient code.
+            <p className="course-description" style={{ marginTop: "1rem", lineHeight: "1.6", textAlign: "justify" }}>
+              The Data Structures and Algorithms course helped me develop a solid understanding of key data
+              structures such as arrays, linked lists, stacks, queues, and graphs. I learned how to efficiently
+              store and manipulate data using these structures and explored the importance of algorithms in
+              optimizing problem-solving. Topics such as sorting, searching, and dynamic programming were
+              covered in depth, and I gained practical skills in implementing algorithms that solve real-world
+              problems. This course also prepared me for coding interviews by enhancing my ability to think
+              algorithmically and write efficient code.
             </p>
             <Button 
               href="https://coursera.org/share/c182b0331fc76e69ede31032a7875033" 

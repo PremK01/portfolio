@@ -10,6 +10,7 @@ import {
   SiPython, // For Jupyter Notebook
   SiMicrosoftoffice, // For Microsoft Office
 } from "react-icons/si";
+import { FaRobot } from "react-icons/fa"; // Import FaRobot for ChatGPT
 
 function Toolstack() {
   return (
@@ -45,6 +46,11 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
         <SiMicrosoftoffice size={50} />
         <div style={{ fontSize: "12px", marginTop: "5px" }}>Microsoft Office</div>
+      </Col>
+      {/* Add ChatGPT Icon */}
+      <Col xs={4} md={2} className="tech-icons" style={{ textAlign: "center" }}>
+        <FaRobot size={50} />
+        <div style={{ fontSize: "12px", marginTop: "5px" }}>ChatGPT</div>
       </Col>
     </Row>
   );
