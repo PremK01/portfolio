@@ -748,46 +748,84 @@ button:focus {
   color: #ffffff; /* Optional: Set text color if necessary */
 }
 /* Animation styles for the text */
+.animated-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent text from overflowing */
+}
+
 .animated-text div {
   width: 100%;
   text-align: center;
   animation: gradient 2.4s infinite ease-in-out;
-  letter-spacing: 10px;
+  letter-spacing: 1vw; /* Letter spacing based on viewport width */
   white-space: nowrap;
-  font-size: 20px;
-  text-indent: 10px;
+  font-size: 5vw; /* Font size based on viewport width */
+  text-indent: 1vw; /* Text indent based on viewport width */
+  margin: 0; /* Ensure no margin causes overflow */
 }
 
 .animated-text .s1 {
-  font-size: 24px;
+  font-size: 6vw; /* Slightly larger font size for "LETS CONNECT!" */
 }
 
 .animated-text .a01 {
   animation-delay: 0.1s;
 }
+
 .animated-text .a02 {
   animation-delay: 0.2s;
 }
+
 .animated-text .a03 {
   animation-delay: 0.3s;
 }
+
 .animated-text .a04 {
   animation-delay: 0.4s;
 }
 
 @keyframes gradient {
   0% {
-    letter-spacing: 10px;
-    text-indent: 10px;
+    letter-spacing: 1vw;
+    text-indent: 1vw;
   }
   40% {
-    letter-spacing: 50px;
-    text-indent: 50px;
+    letter-spacing: 5vw;
+    text-indent: 5vw;
   }
   80%,
   100% {
-    letter-spacing: 10px;
-    text-indent: 10px;
+    letter-spacing: 1vw;
+    text-indent: 1vw;
+  }
+}
+
+/* Add media query for larger mobile screens (like tablets) */
+@media (max-width: 768px) {
+  .animated-text div {
+    font-size: 16px; /* Adjust font size for small screens */
+    letter-spacing: 5px; /* Reduce letter spacing */
+    text-indent: 5px; /* Adjust text indent */
+  }
+
+  .animated-text .s1 {
+    font-size: 18px; /* Slightly larger for "LETS CONNECT!" */
+  }
+}
+
+/* Add media query for smaller mobile screens */
+@media (max-width: 480px) {
+  .animated-text div {
+    font-size: 14px; /* Adjust font size further for smaller screens */
+    letter-spacing: 3px; /* Reduce letter spacing further */
+    text-indent: 3px; /* Adjust text indent */
+  }
+
+  .animated-text .s1 {
+    font-size: 16px; /* Slightly larger for "LETS CONNECT!" */
   }
 }
 /* Keyboard animation for text */
