@@ -803,10 +803,10 @@ button:focus {
   }
 }
 
-/* Add media query for larger mobile screens (like tablets) */
+/* Media query for tablets and larger mobile screens */
 @media (max-width: 768px) {
   .animated-text div {
-    font-size: 16px; /* Adjust font size for small screens */
+    font-size: 16px; /* Adjust font size for smaller screens */
     letter-spacing: 5px; /* Reduce letter spacing */
     text-indent: 5px; /* Adjust text indent */
   }
@@ -816,10 +816,10 @@ button:focus {
   }
 }
 
-/* Add media query for smaller mobile screens */
+/* Media query for smaller mobile screens */
 @media (max-width: 480px) {
   .animated-text div {
-    font-size: 14px; /* Adjust font size further for smaller screens */
+    font-size: 14px; /* Further adjust font size for smaller screens */
     letter-spacing: 3px; /* Reduce letter spacing further */
     text-indent: 3px; /* Adjust text indent */
   }
@@ -828,6 +828,20 @@ button:focus {
     font-size: 16px; /* Slightly larger for "LETS CONNECT!" */
   }
 }
+
+/* Media query for larger screens (Desktops) */
+@media (min-width: 1024px) {
+  .animated-text div {
+    font-size: 2rem; /* Use fixed font size for desktops to prevent overflow */
+    letter-spacing: 2px; /* Adjust letter spacing for desktop */
+    text-indent: 2px; /* Adjust text indent for desktop */
+  }
+
+  .animated-text .s1 {
+    font-size: 2.5rem; /* Slightly larger for "LETS CONNECT!" on desktops */
+  }
+}
+
 /* Keyboard animation for text */
 .keyboard {
   display: inline-block;
