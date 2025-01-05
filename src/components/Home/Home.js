@@ -53,18 +53,10 @@ function Home() {
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
+            
+            <div className="unique-text">HELLO WORLD</div>
             </Col>
-            <div className="animated-text">
-              <div className="a01">HELLO WORLD</div>
-              <div className="a02">HELLO WORLD</div>
-              <div className="a03">HELLO WORLD</div>
-              <div className="a04">HELLO WORLD</div>
-              <br />
-              <div className="a01 s1">LETS CONNECT!</div>
-              <div className="a02 s1">LETS CONNECT!</div>
-              <div className="a03 s1">LETS CONNECT!</div>
-              <div className="a04 s1">LETS CONNECT!</div>
-            </div>
+
 
           </Row>
         </Container>
