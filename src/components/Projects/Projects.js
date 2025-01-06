@@ -92,14 +92,16 @@ function Projects() {
                       ))}
                     </ul>
                   </Card.Text>
-                  <Button
-                    variant="primary"
-                    href={project.ghLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View on GitHub
-                  </Button>
+                  {project.ghLink && (
+                    <Button
+                      variant="primary"
+                      href={project.ghLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View on GitHub
+                    </Button>
+                  )}
                 </Card.Body>
               </Card>
             </Col>
