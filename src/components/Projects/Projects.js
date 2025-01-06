@@ -37,13 +37,25 @@ function Projects() {
       title: "Portfolio",
       description:
         "The personal portfolio website that you are looking at, showcasing my projects, skills, and contact information. Built with React.js and deployed online.",
-      ghLink: "https://github.com/PremK01/portfolio",
       skills: [
         "React.js",
         "Node.js",
         "Express.js",
         "Vercel",
         "CSS3",
+      ],
+    },
+    {
+      imgPath: "",
+      title: "Chatbot Mini Project",
+      description:
+        "A GUI-based chat application allowing real-time communication between users. Built using Python's Tkinter module, it provides a simple, intuitive interface and leverages socket programming for seamless client-server communication.",
+      skills: [
+        "Python",
+        "Tkinter",
+        "Socket Programming",
+        "Threading",
+        "TCP/IP Protocols",
       ],
     },
   ];
