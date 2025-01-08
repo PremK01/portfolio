@@ -34,26 +34,16 @@ function Home() {
               <br />
               
               <h1 className="heading-name">
-  I'M A
-  <div className="keyboard">
-    {Array.from(" COMPUTER  SCIENCE   ").map((char, index) => (
-      <span key={index} className={`key key-${index + 1}`}>
-        {char === " " ? "\u00A0" : char} {/* Handles spaces properly */}
-      </span>
-    ))}
-    {/* Apply animation to the text "GRADUATE", "FRESHER", "ENTHUSIAST" */}
-    <div className="graduatefx">
-      <ul className="words-list">
-        <li className="word-item">GRADUATE</li>
-        <li className="word-item">FRESHER</li>
-        <li className="word-item">ENTHUSIAST</li>
-        <li className="word-item">ENGINEER</li>
-      </ul>
-    </div>
-  </div>
-</h1>
-
-
+                I'M A
+                <div className="keyboard">
+                {Array.from(" COMPUTER  SCIENCE   ").map((char, index) => (
+                <span key={index} className={`key key-${index + 1}`}>
+                {char === " " ? "\u00A0" : char} {/* Handles spaces properly */}
+                </span>
+                ))}
+                GRADUATE
+                </div>
+              </h1>
             </Col>
             
             
