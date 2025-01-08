@@ -36,12 +36,11 @@ function Home() {
               <h1 className="heading-name">
                 I'M A
                 <div className="keyboard">
-                {Array.from(" COMPUTER  SCIENCE   ").map((char, index) => (
+                {Array.from(" COMPUTER  SCIENCE   GRADUATE").map((char, index) => (
                 <span key={index} className={`key key-${index + 1}`}>
                 {char === " " ? "\u00A0" : char} {/* Handles spaces properly */}
                 </span>
                 ))}
-                GRADUATE
                 </div>
               </h1>
             </Col>
