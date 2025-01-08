@@ -1111,7 +1111,7 @@ body {
     text-align: center;
   }
 }
-/* Ensure the entire block is inline and responsive */
+/* Ensures the entire block is inline */
 .keyboard {
   display: inline-block;
   font-size: 38px;
@@ -1124,7 +1124,7 @@ body {
 /* Container for the animated words */
 .graduatefx {
   display: inline-block; /* Keeps the words inline */
-  font-size: 37px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 40px;
   color: #ecf0f1;
@@ -1133,8 +1133,8 @@ body {
   position: relative;
   vertical-align: middle; /* Ensures it's vertically centered */
   margin-left: -5px; /* Reduces space between "COMPUTER SCIENCE" and animated words */
-  align-items: center;
-  white-space: nowrap; /* Prevents line break on smaller screens */
+ 
+  align-items: center; 
 }
 
 /* List that holds the words */
@@ -1171,23 +1171,4 @@ body {
   49.98%, 62.64% { transform: translate3d(0, -75%, 0); }
   66.64%, 79.3% { transform: translate3d(0, -50%, 0); }
   83.3%, 95.96% { transform: translate3d(0, -25%, 0); }
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-  /* Adjusts the font size for smaller screens */
-  .keyboard {
-    font-size: 28px;
-  }
-
-  .graduatefx {
-    font-size: 28px;
-    margin-left: 0; /* Removes negative margin on mobile */
-  }
-
-  /* Makes sure the words don't wrap */
-  .words-list {
-    flex-direction: row; /* Keeps words in a horizontal line */
-    justify-content: flex-start; /* Aligns words to the left */
-  }
 }
