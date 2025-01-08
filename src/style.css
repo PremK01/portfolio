@@ -1112,14 +1112,7 @@ body {
   }
 }
 /* Ensures the entire block is inline */
-.keyboard {
-  display: inline-block;
-  font-size: 38px;
-  font-weight: 600;
-  line-height: 40px;
-  color: #ecf0f1;
-  vertical-align: middle; /* Aligns with animated text */
-}
+
 
 /* Container for the animated words */
 .graduatefx {
