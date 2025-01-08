@@ -84,7 +84,7 @@ function Home() {
                 along the way.
                 <br />
                 <br />
-                I am a Full Stack Developer(fresher). I am skilled in both
+                I am a Full Stack Developer (fresher). I am skilled in both
                 <i>
                   <b className="purple"> front-end and back-end technologies. </b>
                 </i>

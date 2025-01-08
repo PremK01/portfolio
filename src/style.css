@@ -880,16 +880,16 @@ button:focus {
 /* Media query for mobile-friendly behavior */
 @media (max-width: 768px) {
   .keyboard {
-    display: block; /* Make the keyboard container block to allow wrapping */
-    text-align: center; /* Center the text on smaller screens */
+    display: inline-block; /* Keep the keyboard inline */
+    text-align: center; /* Center the text */
   }
 
   .key {
-    font-size: 4vw; /* Adjust font size based on screen width */
+    font-size: 1.2rem; /* Adjust font size using rem for better scalability */
     letter-spacing: normal; /* Adjust letter-spacing for mobile */
-    display: inline-block; /* Keep the key display inline-block for animation */
   }
 }
+
 
 /*Neon Text*/
 .neon-text {
