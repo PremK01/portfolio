@@ -8,11 +8,11 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi, I am <span className="purple">Prem Prasad K </span>
-            from <span className="purple"> Chennai, India.</span>
+            Hi, my name is <span className="purple">Prem Prasad K </span>
+            and I'm from <span className="purple"> Chennai, India.</span>
             <br />
             <br />
-            I am an engineering graduate open for work, eager to leverage my skills to solve real world problems.
+            I am an engineering graduate/fresher open for work, eager to leverage my skills to solve real world problems.
             <br />
             <br />
             I am equipped with front-end skills such as React.js, HTML, CSS, Javascript and back-end skills like

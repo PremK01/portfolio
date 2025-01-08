@@ -29,20 +29,31 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> PREM PRASAD K</strong>
+                <strong className="main-name"> PREM PRASAD </strong>
               </h1>
               <br />
               
               <h1 className="heading-name">
-                I'M A
-                <div className="keyboard">
-                {Array.from(" COMPUTER  SCIENCE   GRADUATE").map((char, index) => (
-                <span key={index} className={`key key-${index + 1}`}>
-                {char === " " ? "\u00A0" : char} {/* Handles spaces properly */}
-                </span>
-                ))}
-                </div>
-              </h1>
+  I'M A
+  <div className="keyboard">
+    {Array.from(" COMPUTER  SCIENCE   ").map((char, index) => (
+      <span key={index} className={`key key-${index + 1}`}>
+        {char === " " ? "\u00A0" : char} {/* Handles spaces properly */}
+      </span>
+    ))}
+    {/* Apply animation to the text "GRADUATE", "FRESHER", "ENTHUSIAST" */}
+    <div className="graduatefx">
+      <ul className="words-list">
+        <li className="word-item">GRADUATE</li>
+        <li className="word-item">FRESHER</li>
+        <li className="word-item">ENTHUSIAST</li>
+        <li className="word-item">ENGINEER</li>
+      </ul>
+    </div>
+  </div>
+</h1>
+
+
             </Col>
             
             
@@ -67,15 +78,24 @@ function Home() {
         <Container>
           <Row>
             <Col md={8} className="home-about-description" style={{ textAlign: "left" }}>
-              <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "2.6em" }}>
+              <span
+                style={{
+                  backgroundColor: "rgba(187, 209, 88, 0.1)",
+                  padding: "0 5px",
+                  display: "inline-block",
+                }}
+              >
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
-              </h1>
+              </span>
+            </h1>
+
               <p className="home-about-body">
                 I’ve developed a strong passion for programming and have made significant progress 
                 along the way.
                 <br />
                 <br />
-                I am skilled in both
+                I am a Full Stack Developer(fresher). I am skilled in both
                 <i>
                   <b className="purple"> front-end and back-end technologies. </b>
                 </i>

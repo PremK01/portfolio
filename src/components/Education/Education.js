@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Button } from "react-bootstrap";
+import Particle from "../Particle"; // Import Particle component
 
 function Education() {
   useEffect(() => {
@@ -8,6 +9,7 @@ function Education() {
 
   return (
     <Container fluid className="education-section">
+      <Particle /> {/* Add Particle effect here */}
       <h1 className="education-heading">Education Timeline</h1>
 
       <div className="timeline">
