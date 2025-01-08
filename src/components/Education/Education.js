@@ -99,6 +99,25 @@ function Education() {
               View
             </Button>
           </li>
+          <li style={{ marginBottom: "2rem" }}>
+            <p><strong>Prompt Engineering</strong></p>
+            <p className="course-description" style={{ marginTop: "1rem", lineHeight: "1.6", textAlign: "justify" }}>
+            The Prompt Engineering Specialization helped me develop expertise in crafting effective prompts for generative
+            AI systems like ChatGPT. Through hands-on practice, I learned principles and templates for writing prompts that optimize
+            the capabilities of large language models. This specialization covered topics such as ChatGPT advanced data analysis,
+            trustworthy generative AI, and techniques for instructing AI to accomplish complex tasks. I gained practical skills in
+            automating repetitive work, solving problems, and boosting productivity by integrating generative AI into workflows.
+            The specialization provided me with core competencies to harness AI's reasoning and creative potential while ensuring
+            ethical and trustworthy usage.
+            </p>
+            <Button 
+              href="https://coursera.org/share/371a60213cef58dfb4e232691fdc46b6" 
+              target="_blank" 
+              className="view-button"
+            >
+              View
+            </Button>
+          </li>
         </ul>
       </div>
     </Container>

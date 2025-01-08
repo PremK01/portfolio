@@ -58,6 +58,20 @@ function Projects() {
         "TCP/IP Protocols",
       ],
     },
+    {
+      imgPath: "",
+      title: "Prompt Engineering Toolkit",
+      description:
+        "A comprehensive toolkit for experimenting with and optimizing prompt engineering techniques for various NLP tasks. It includes structured prompts, example applications, and Jupyter notebooks to help users fine-tune and test prompts with OpenAI's GPT-3 API.",
+      ghLink: "https://github.com/PremK01/Prompt-Engineering-Toolkit",
+      skills: [
+        "Python",
+        "OpenAI API",
+        "Jupyter Notebooks",
+        "Machine Learning",
+        "Natural Language Processing (NLP)",
+      ],
+    },
   ];
 
   return (
