@@ -789,6 +789,8 @@ button:focus {
 .keyboard {
   display: inline-block;
   word-wrap: break-word; /* Ensures long words break correctly on smaller screens */
+  text-align: center; /* Ensures text is centered */
+  width: 100%; /* Ensures the container takes the full width */
 }
 
 .key {
@@ -880,15 +882,16 @@ button:focus {
 /* Media query for mobile-friendly behavior */
 @media (max-width: 768px) {
   .keyboard {
-    display: inline-block; /* Keep the keyboard inline */
-    text-align: center; /* Center the text */
+    text-align: center; /* Ensures text remains centered */
   }
 
   .key {
     font-size: 1.2rem; /* Adjust font size using rem for better scalability */
     letter-spacing: normal; /* Adjust letter-spacing for mobile */
+    display: inline-block; /* Keep the key display inline-block for animation */
   }
 }
+
 
 
 /*Neon Text*/
