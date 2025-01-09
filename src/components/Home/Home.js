@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/homemain.png";
 import Particle from "../Particle";
 import myImg from "../../Assets/avatar1.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
+  const words = ["GRADUATE", "ENGINEER", "DEVELOPER", "FRESHER"];
+  const [currentWord, setCurrentWord] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWord((prevWord) => (prevWord + 1) % words.length);
+    }, 3000); // Change word every 3 seconds
+    return () => clearInterval(interval);
+  }, [words.length]);
+
   return (
     <section>
       {/* Home Section */}
@@ -20,7 +26,7 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header" style={{ textAlign: "left" }}>
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1  className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
@@ -32,11 +38,14 @@ function Home() {
                 <strong className="main-name"> PREM PRASAD </strong>
               </h1>
               <br />
-              
-              
+              <h1 className="heading-name">
+                I AM A <br />
+                <strong className="main-name">COMPUTER SCIENCE </strong>
+                <span className="typewriter">{words[currentWord]}</span>
+              </h1>
+              <br />
             </Col>
-            
-            
+
             <Col md={5} style={{ paddingBottom: 20, textAlign: "center" }}>
               <img
                 src={homeLogo}
@@ -44,11 +53,8 @@ function Home() {
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
-            
-            <div className="unique-text">HELLO WORLD</div>
+              <div className="unique-text">HELLO WORLD</div>
             </Col>
-
-
           </Row>
         </Container>
       </Container>
@@ -57,22 +63,26 @@ function Home() {
       <Container fluid className="home-about-section" id="about">
         <Container>
           <Row>
-            <Col md={8} className="home-about-description" style={{ textAlign: "left" }}>
-            <h1 style={{ fontSize: "2.6em" }}>
-              <span
-                style={{
-                  backgroundColor: "rgba(187, 209, 88, 0.1)",
-                  padding: "0 5px",
-                  display: "inline-block",
-                }}
-              >
-                LET ME <span className="purple"> INTRODUCE </span> MYSELF
-              </span>
-            </h1>
+            <Col
+              md={8}
+              className="home-about-description"
+              style={{ textAlign: "left" }}
+            >
+              <h1 style={{ fontSize: "2.6em" }}>
+                <span
+                  style={{
+                    backgroundColor: "rgba(187, 209, 88, 0.1)",
+                    padding: "0 5px",
+                    display: "inline-block",
+                  }}
+                >
+                  LET ME <span className="purple"> INTRODUCE </span> MYSELF
+                </span>
+              </h1>
 
               <p className="home-about-body">
-                I’ve developed a strong passion for programming and have made significant progress 
-                along the way.
+                I’ve developed a strong passion for programming and have made
+                significant progress along the way.
                 <br />
                 <br />
                 I am a Full Stack Developer (fresher). I am skilled in both
@@ -83,15 +93,19 @@ function Home() {
                 <br />
                 I’m particularly interested in building &nbsp;
                 <i>
-                  <b className="purple">innovative Web Technologies and Products </b> and
-                  also in areas related to{" "}
+                  <b className="purple">innovative Web Technologies and Products </b>{" "}
+                  and also in areas related to{" "}
                   <b className="purple">Machine Learning.</b>
                 </i>
                 <br />
                 <br />
-                I enjoy working on applications using <b className="purple">Node.js, Express,</b> and
+                I enjoy working on applications using{" "}
+                <b className="purple">Node.js, Express,</b> and
                 <i>
-                  <b className="purple"> Modern Javascript Libraries and Frameworks</b>
+                  <b className="purple">
+                    {" "}
+                    Modern Javascript Libraries and Frameworks
+                  </b>
                 </i>
                 &nbsp; like
                 <i>
@@ -106,11 +120,18 @@ function Home() {
             </Col>
           </Row>
           <Row>
-            <Col md={12} className="home-about-social" style={{ textAlign: "center" }}>
+            <Col
+              md={12}
+              className="home-about-social"
+              style={{ textAlign: "center" }}
+            >
               <p>
                 Feel free to <span className="purple">connect </span>with me
               </p>
-              <ul className="home-about-social-links" style={{ textAlign: "center" }}>
+              <ul
+                className="home-about-social-links"
+                style={{ textAlign: "center" }}
+              >
                 <li className="social-icons">
                   <a
                     href="https://github.com/PremK01"
