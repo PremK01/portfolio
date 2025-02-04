@@ -67,9 +67,23 @@ function Projects() {
       skills: [
         "Python",
         "OpenAI API",
-        "Jupyter Notebooks",
+        "Prompt Engineering",
         "Machine Learning",
         "Natural Language Processing (NLP)",
+      ],
+    },
+    {
+      imgPath: "",
+      title: "Patient Volume Forecasting",
+      description:
+        "This project was developed for a data science hackathon, where the task was to predict daily patient inflow using historical data. The solution involves preprocessing time-series data, handling missing values and outliers, engineering features, and training a forecasting model. The Prophet model was used to capture temporal patterns, ensuring accurate predictions.",
+      ghLink: "https://github.com/PremK01/Patient-Volume-Forecasting",
+      skills: [
+        "Python",
+        "Data Analysis",
+        "Time Series Forecasting",
+        "Problem Solving",
+        "Data Visualization",
       ],
     },
   ];
